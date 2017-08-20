@@ -1,0 +1,44 @@
+.TypeWord {
+    user-select: none;
+    margin: 0 3px;
+    display: inline-block;
+}
+
+.TypeWord__highlighted {
+    text-decoration: underline;
+}
+
+.TypeWord__completed {
+    text-decoration: none;
+    color: green;
+}
+
+.TypeChar {
+}
+
+.TypeChar__correct {
+    color: green;
+}
+
+
+.TypeChar__error {
+    background-color: red;
+}
+
+.Caret {
+    display: inline-block;
+    width: 0;
+    font-weight: 100;
+    font-size: 30px;
+    animation: 1s blink step-end infinite;
+    text-decoration: none;
+}
+
+@keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: black;
+    }
+}
